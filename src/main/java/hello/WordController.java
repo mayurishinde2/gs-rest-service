@@ -1,8 +1,6 @@
 package hello;
 
 import org.springframework.web.bind.annotation.RestController;
-import hello.Word;
-import hello.WordService;
 
 @RestController
 public class WordController {
