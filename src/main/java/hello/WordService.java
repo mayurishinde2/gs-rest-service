@@ -40,17 +40,13 @@ public class WordService{
                     isAnagram = false;
                     break;
             }else {
-                System.out.println("odd length"+ entry.getValue());
                 if( !isMaxOneOdd && entry.getValue()% 2 != 0){
-                    System.out.println( "in if"+ entry.getValue());
                     isMaxOneOdd=true;
                 }
                 else if(entry.getValue()% 2 == 0){
-                    System.out.println( "in else if"+ entry.getValue());
                     isAnagram = true;
                 }
                 else{
-                    System.out.println("in else"+ entry.getValue());
                     isAnagram = false;
                     break;
                 }
