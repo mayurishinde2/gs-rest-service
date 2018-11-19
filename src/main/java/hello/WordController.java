@@ -15,7 +15,7 @@ public class WordController {
 	@GetMapping(path = "/words/{word}", produces = "application/json;charset=UTF-8") 
 	@ResponseBody
 	public WordResponse getWordResponse(@PathVariable String word) {
-		Word wordResponse = null;
+		WordResponse wordResponse = null;
 		if(word.length() > 0 ){
 		private WordService wordService = new WordService();
 		wordResponse=wordService.getWordResponse()
