@@ -1,10 +1,18 @@
 package hello;
 
-public class Word {
+public class WordResponse {
+	private String word;
 	private boolean palindrome;
 	private boolean anagramOfPalindrome;
 	
-	public Word() {
+	public WordResponse() {
+    }
+	public String getWord() {
+        return word;
+    }
+
+    public void setWord(String word) {
+        this.word= word;
     }
 	public boolean getPalindrome() {
         return palindrome;
@@ -23,7 +31,7 @@ public class Word {
     }
 	 @Override
     public String toString() {
-        return "Word{" + "palindrome=" + palindrome + ", anagramOfPalindrome=" + anagramOfPalindrome
+        return "WordResponse{" + "word="+ word + "palindrome=" + palindrome + ", anagramOfPalindrome=" + anagramOfPalindrome
                 +  '}';
     }
 	
