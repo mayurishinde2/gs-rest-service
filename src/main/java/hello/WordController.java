@@ -7,11 +7,6 @@ import hello.WordService;
 @RestController
 public class WordController {
     // TODO Implement the /words/{word} endpoint
-	@GetMapping("/words/{word}")
-    public Blog show(@PathVariable String word){
-        return blogMockedData.getBlogById(word);
-    }
-	
 	@GetMapping(path = "/words/{word}", produces = "application/json;charset=UTF-8") 
 	@ResponseBody
 	public WordResponse getWordResponse(@PathVariable String word) {
